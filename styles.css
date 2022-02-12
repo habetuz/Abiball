@@ -104,7 +104,6 @@ section {
     border-radius: 40px;
     border: 30px solid transparent;
     padding: 3px;
-    margin: 30px;
     box-shadow: 0 0 30px black;
     min-height: 200px;
     position: relative;
@@ -118,6 +117,10 @@ section {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.grid {
+    margin: 30px
 }
 
 .champaign::before {
@@ -147,6 +150,6 @@ section {
     }
 
     .location {
-        padding-bottom: 150px
+        padding-bottom: 190px
     }
 }
