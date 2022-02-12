@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
-    --card-bg: linear-gradient(#181A1B, #181A1B);
+    --card-bg: linear-gradient(#101111, #101111);
     --gold-gradient: linear-gradient(to right,
             #462523 0,
             #cb9b51 22%,
@@ -24,7 +24,7 @@ h1 {
     padding: 10px;
     font-family: 'Comforter', cursive;
     text-align: center;
-    font-size: 10em;
+    font-size: 150px;
     background-image: var(--gold-gradient);
     background-clip: text;
     -webkit-background-clip: text;
@@ -35,7 +35,7 @@ h2 {
     padding: 10px;
     font-family: 'Comforter', cursive;
     text-align: center;
-    font-size: 5em;
+    font-size: 100px;
     background-image: linear-gradient(to right,
             #462523 0,
             #cb9b51 22%,
@@ -50,14 +50,24 @@ h2 {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+    box-shadow: 0 0 30px 0px black;
+    border-radius: 30px;
+    transition: box-shadow .5s;
+}
+
+img:hover {
+    box-shadow: 0 0 100px 10px black;
 }
 
 section {
     background-color: var(--bg-color);
-    padding: 2em;
+    padding: 50px;
     z-index: -1;
+    position: relative;
 }
+
+
 
 .parallax_group {
     background: none;
@@ -94,9 +104,9 @@ section {
     border-radius: 40px;
     border: 30px solid transparent;
     padding: 3px;
-    height: 10em;
-    margin: 2em;
+    margin: 30px;
     box-shadow: 0 0 30px black;
+    min-height: 200px;
     position: relative;
 }
 
@@ -112,4 +122,31 @@ section {
 
 .champaign::before {
     background-image: url(resources/sekt.svg);
+}
+
+.location_description {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-120%);
+    width: 400px;
+}
+
+.location_image {
+    position: relative;
+    transform: translateX(-50%);
+    max-width: 90%;
+    left: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    .location_description {
+        top: auto;
+        bottom: -170px;
+        transform: translateX(-50%);
+    }
+
+    .location {
+        padding-bottom: 150px
+    }
 }
