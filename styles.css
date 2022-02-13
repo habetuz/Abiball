@@ -74,7 +74,7 @@ p {
     position: relative;
 }
 
-a {
+.text_link {
     background-image: var(--gold-gradient);
     background-clip: text;
     -webkit-background-clip: text;
@@ -82,13 +82,13 @@ a {
     position: relative;
 }
 
-a::after {
+.text_link::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0.1em;
+    height: 1px;
     background-image: var(--gold-gradient);
     opacity: 0;
     transition: opacity 300ms, transform 300ms;
@@ -96,8 +96,8 @@ a::after {
     transform: scaleX(0);
 }
 
-a:hover::after,
-a:focus::after{
+.text_link:hover::after,
+.text_link:focus::after{
     opacity: 1;
     transform: scale(1);
 }
@@ -195,7 +195,7 @@ a:focus::after{
         font-size: 25px;
     }
 
-    a::after {
+    .text_link::after {
         transform: scaleX(1);
         opacity: 1;
     }
