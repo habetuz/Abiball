@@ -67,7 +67,17 @@ section {
     position: relative;
 }
 
+p {
+    font-size: 17px;
+    margin: 20px;
+}
 
+a {
+    background-image: var(--gold-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 .parallax_group {
     background: none;
@@ -130,7 +140,7 @@ section {
 .location_description {
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 50px;
     transform: translateX(-120%);
     width: 400px;
 }
@@ -147,9 +157,14 @@ section {
         top: auto;
         bottom: -170px;
         transform: translateX(-50%);
+        width: 80%;
     }
 
     .location {
         padding-bottom: 190px
+    }
+
+    p {
+        font-size: 25px;
     }
 }
