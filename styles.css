@@ -40,7 +40,7 @@ h2 {
     font-size: 100px;
     background-image: var(--gold-gradient);
     background-position: 55%;
-    background-size: 50%;
+    background-size: 60%;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -79,6 +79,8 @@ p {
     -webkit-background-clip: text;
     color: transparent;
     position: relative;
+    white-space: nowrap;
+    font-weight: 600;
 }
 
 .text_link::after {
@@ -87,7 +89,7 @@ p {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 1px;
+    height: 2px;
     background-image: var(--gold-gradient);
     background-position: 60%;
     background-size: 150%;
