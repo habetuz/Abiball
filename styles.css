@@ -229,6 +229,29 @@ b {
     top: 30px;
 }
 
+.questions_ball {
+    max-width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.questions_ball::before {
+    background-image: url(/resources/party.svg);
+}
+
+.questions_tickets {
+    max-width: 300px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.questions_tickets::before {
+    background-image: url(/resources/ticket.svg);
+}
+
 @media screen and (max-width: 1200px) {
     .location_description {
         top: auto;
@@ -248,5 +271,13 @@ b {
     .text_link::after {
         transform: scaleX(1);
         opacity: 1;
+    }
+
+    .questions_ball {
+        max-width: none;
+    }
+
+    .questions_tickets {
+        max-width: none;
     }
 }
