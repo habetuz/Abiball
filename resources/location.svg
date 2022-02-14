@@ -2,9 +2,9 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg width="100%" height="100%" viewBox="0 0 2472 2472" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
     <g id="BG">
-        <rect x="0" y="0" width="2472" height="2472" style="fill:rgb(16,17,17);"/>
+        <rect x="0" y="0" width="2472" height="2472" style="fill:rgb(29,29,29);"/>
     </g>
-    <g transform="matrix(94.0344,0,0,94.0344,107.587,157.262)">
+    <g transform="matrix(102.636,0,0,102.636,4.37349,91.0737)">
         <g id="Location">
             <path d="M12,11.5C10.629,11.5 9.5,10.371 9.5,9C9.5,7.629 10.629,6.5 12,6.5C13.371,6.5 14.5,7.629 14.5,9C14.5,10.371 13.371,11.5 12,11.5M12,2C8.16,2 5,5.16 5,9C5,14.25 12,20.311 12,20.311C12,20.311 19,14.25 19,9C19,5.16 15.84,2 12,2Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/>
         </g>
