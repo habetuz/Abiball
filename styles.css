@@ -49,8 +49,6 @@ h2 {
 section {
     background-color: var(--bg-color);
     padding: 50px;
-    z-index: -1;
-    position: relative;
 }
 
 p {
@@ -68,7 +66,6 @@ b {
 
 .location {
     border-radius: 30px 30px 0 0;
-    box-shadow: 0 0 50px 10px black;
 }
 
 .text_link {
@@ -146,6 +143,10 @@ b {
     box-shadow: 0 0 30px black;
     min-height: 200px;
     position: relative;
+    
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s, transform 1s;
 }
 
 .card::before {
@@ -156,6 +157,11 @@ b {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -60%);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .grid {
@@ -192,9 +198,8 @@ b {
 
 .location_description {
     position: absolute;
-    left: 50%;
+    left: 350px;
     top: 50px;
-    transform: translateX(-120%);
     width: 400px;
 }
 
@@ -238,9 +243,7 @@ b {
 .questions_ball {
     max-width: 300px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-
+    float: right;
 }
 
 .questions_ball::before {
@@ -250,8 +253,6 @@ b {
 .questions_tickets {
     max-width: 300px;
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .questions_tickets::before {
