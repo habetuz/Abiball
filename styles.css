@@ -198,7 +198,7 @@ b {
 
 .location_description {
     position: absolute;
-    left: 350px;
+    left: 10%;
     top: 50px;
     width: 400px;
 }
@@ -262,9 +262,10 @@ b {
 @media screen and (max-width: 1200px) {
     .location_description {
         top: auto;
+        left: 5%;
+        right: 5%;
         bottom: -170px;
-        transform: translateX(-50%);
-        width: 80%;
+        width: auto;
     }
 
     .location {

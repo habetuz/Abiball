@@ -1,6 +1,4 @@
 const callback = function (entries) {
-    console.log(entries)
-
     entries.forEach(entry => {
         if(entry.isIntersecting) entry.target.classList.add("visible")
     });
