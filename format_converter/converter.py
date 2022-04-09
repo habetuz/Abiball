@@ -8,8 +8,8 @@ dict = {}
 for index, row in sheet.iterrows():
     ticket = {
         "name": row["Vorname"] + " " + row["Nachname"],
-        "age": row["Alter zum Zeitpunkt des Abiballs "],
-        "food": row["Essenspräferenz und Unverträglichkeiten"],
+        "age": str(row["Alter zum Zeitpunkt des Abiballs "]),
+        "food": str(row["Essenspräferenz und Unverträglichkeiten"]),
         "student_name": row["Vorname.1"] + " " + row["Nachname.1"],
     }
 
