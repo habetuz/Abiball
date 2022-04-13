@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<!--Command: wkhtmltopdf --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 --allow C:/dev/Abiball/resources  ticket.html ticket.pdf-->
-<html lang="en">
+<!--Command: wkhtmltopdf --margin-left 0 --margin-right 0 --margin-top 0 --margin-bottom 0 --allow C:/dev/Abiball/resources --allow D:\Programming\Abiball\resources  ticket.html ticket.pdf-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
 <body>
     <style>
         body {
@@ -10,7 +12,13 @@
         span {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 500;
+        }
+
+        td {
+            padding: 10px;
+            width: fit-content;
+            border: #121212 solid 2px;
         }
     </style>
     <div style="
@@ -25,9 +33,9 @@
         top: 70px;">
     <div style="
         position: absolute;
-        top: 300px;
-        left: 30px">
-        <img src="location_transparent.svg" style="height: 30px;">
+        top: 380px;
+        left: 50px">
+        <img src="location_icon.png" style="height: 30px;">
         <span style="
             color: #f2d572;
             position: relative;
@@ -35,5 +43,90 @@
             Kurhaus Bad Krozingen
         </span>
     </div>
+    <div style="
+        position: absolute;
+        top: 430px;
+        left: 50px">
+        <img src="calendar_icon.png" style="height: 30px;">
+        <span style="
+            color: #f2d572;
+            position: relative;
+            top: -7px;">
+            10. Juli 16:00 Uhr
+        </span>
+    </div>
+    <img src="qr-code.png" style="
+        position: absolute;
+        top: 550px;
+        right: 50px;
+        width: 300px;">
+    <table style="
+        position: absolute;
+        top: 580px;
+        left: 50px;
+        width: 500px;
+        border-collapse: collapse;
+        border-spacing: 0;">
+        <tr>
+            <td style="border-right-width: 0;">
+                <span>
+                    Name
+                </span>
+            </td>
+            <td style="border-left-width: 0;">
+                <span>
+                    Marvin Fuchs
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right-width: 0;">
+                <span>
+                    Alter
+                </span>
+            </td>
+            <td style="border-left-width: 0;">
+                <span>
+                    18+
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right-width: 0;">
+                <span>
+                    Essen
+                </span>
+            </td>
+            <td style="border-left-width: 0;">
+                <span>
+                    Fleisch
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right-width: 0;">
+                <span>
+                    Schüler
+                </span>
+            </td>
+            <td style="border-left-width: 0;">
+                <span>
+                    Marvin Fuchs
+                </span>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-right-width: 0;">
+                <span>
+                    Ticket-ID
+                </span>
+            </td>
+            <td style="border-left-width: 0;">
+                <span>
+                    abcde
+                </span>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
