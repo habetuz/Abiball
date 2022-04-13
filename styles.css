@@ -58,6 +58,7 @@ p {
     margin: 20px;
     z-index: 1;
     position: relative;
+    text-align: center;
 }
 
 b {
