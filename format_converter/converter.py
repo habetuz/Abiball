@@ -9,7 +9,7 @@ for index, row in sheet.iterrows():
     ticket = {
         "name": row["Vorname"] + " " + row["Nachname"],
         "age": str(row["Alter zum Zeitpunkt des Abiballs "]),
-        "food": str(row["Essenspräferenz und Unverträglichkeiten"]),
+        "food": str(row["Essenspräferenz"]),
         "student_name": row["Vorname.1"] + " " + row["Nachname.1"],
         "checked_in": False
     }
